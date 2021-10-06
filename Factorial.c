@@ -6,7 +6,7 @@ int main(void)
  long fac;
 
  cout << "Enter a Number : ";
- cin >> fac;
+ cin >> no;
 
  fac = 2;
 
