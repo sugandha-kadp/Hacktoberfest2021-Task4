@@ -3,14 +3,12 @@ using namespace std;
 int main(void)
 {
  int no;
- long fac;
+ long fac = 1;
 
  cout << "Enter a Number : ";
- cin >> fac;
+ cin >> no;
 
-no = fac;
-
-  for (int r= no - 1; r >= 1; r--)
+  for (int r= no; r >= 1; r--)
   {
     fac = fac * r;
   }
