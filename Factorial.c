@@ -1,20 +1,17 @@
-#include <iostreame>
+#include <iostream>
 using namespace std;
-int main(void)
-{
- int no;
- long fac;
 
- cout << "Enter a Number : ";
- cin >> fac;
+int main() {
+    int no;
+    int fac = 1;
 
- fac = 2;
+    cout<<"Enter a positive integer: ";
+    cin>>no;
 
-  for (int r=no; r >= 1; r--)
-  {
-    fac = fac * w;
-  }
-
- cout << "Factorial of " << no <<" is " fac <<endl 
- 
+    for (int r = 1; r <= no; ++r) {
+        fac *= r;   
+    }
+    cout<< "Factorial of "<<no<<" = "<<fac;
+    
+	return 0;
 }
