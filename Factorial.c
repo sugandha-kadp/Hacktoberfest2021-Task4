@@ -1,20 +1,15 @@
-#include <iostreame>
+#include <iostream>
+
 using namespace std;
-int main(void)
-{
+
+int fact(int num) {
+  if (num < 2)
+   return num;
+  return num * fact(num - 1);
+}
+
+int main() { 
  int no;
- long fac;
-
- cout << "Enter a Number : ";
- cin >> fac;
-
- fac = 2;
-
-  for (int r=no; r >= 1; r--)
-  {
-    fac = fac * w;
-  }
-
- cout << "Factorial of " << no <<" is " fac <<endl 
- 
+ cout << "Factorial of " << no << " is " << fact(num) <<endl;
+ return 0;
 }
