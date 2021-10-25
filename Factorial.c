@@ -1,20 +1,23 @@
-#include <iostreame>
-using namespace std;
+#include <stdio.h>
+
+
 int main(void)
 {
  int no;
- long fac;
+ int fac;
 
- cout << "Enter a Number : ";
- cin >> fac;
+ printf( "Enter a Number : ");
+ scanf("%d",&no);
 
- fac = 2;
+ fac = 1;
+ 
 
   for (int r=no; r >= 1; r--)
   {
-    fac = fac * w;
+    fac = fac * r;
   }
+printf("\n");
+printf("Factorial of %d is %d", no,fac); 
+return 0;
 
- cout << "Factorial of " << no <<" is " fac <<endl 
- 
 }
