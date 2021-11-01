@@ -1,20 +1,24 @@
-#include <iostreame>
-using namespace std;
-int main(void)
+//C program to find factorial of a number
+//C input:
+#include <stdio.h>
+int main()
+
 {
- int no;
- long fac;
+    int i,fact=1,num;
 
- cout << "Enter a Number : ";
- cin >> fac;
+    printf("Enter a number: ");
+    scanf("%d",&num);
 
- fac = 2;
+    for(i=1;i<=num;i++)
+    {
+        fact=fact*i;
+    }
 
-  for (int r=no; r >= 1; r--)
-  {
-    fac = fac * w;
-  }
-
- cout << "Factorial of " << no <<" is " fac <<endl 
- 
+    printf("Factorial of %d is %d\n", num,fact);
+   return 0;
 }
+
+//code output:
+//Enter a number: 8
+//Factorial of 8 is 40320
+//
